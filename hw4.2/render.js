@@ -127,11 +127,9 @@ export function layout(title, content) {
           <div class=drop>
               <button class="btn"><a>學生資料</a></button>
               <div class=down>
-                  <a href="https://github.com/cabdy1735/wp109b">git hub</a>
-                  <a href="https://github.com/cabdy1735/wp109b/wiki">期中筆記</a>
-                  <a href="https://github.com/cabdy1735/wp109b/tree/main/%E6%9C%9F%E6%9C%AB3">程式碼</a>
-                  <a href="https://github.com/cabdy1735/wp109b/blob/main/%E6%9C%9F%E6%9C%AB3/readme.ed">報告</a>
-              </div>
+                  <a href="https://github.com/cabdy1735/ws110a">git hub</a>
+                  <a href="https://github.com/cabdy1735/ws110a/wiki">期中筆記</a>
+               </div>
           </div>          
           </div>
       </div>
