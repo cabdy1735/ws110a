@@ -131,24 +131,22 @@ async function userlist(ctx) {
   if (user != null) {
     let posts = postQuery("SELECT id, username, title, body FROM posts")
     console.log(posts)
-    console.log(posts.username)
-    console.log(user.username)
-    /*arrayofObjects.forEach(posts =>{
-      if(posts.username === user.username){
-          console.log("Amazon Employee:", posts.body);
+    var result = posts.map(function(item, index, array){
+      if (item.username == user.username) {
+        return item;              
       }
-  });
-    //post=posts[0]
-    //console.log(posts.id)
-    //console.log(post)
-    /*for(var i=1;i<=posts.id;i++){
-      console.log('userpost111:post=', posts[i])
-    }*/
+    });
+    console.log(result)
+    var userpost=result.filter(obj => obj != undefined);
+    
+    console.log(userpost)
+    ctx.response.body = await render.list(userpost, await ctx.state.session.get('user'));
   } 
   else {
     ctx.response.body = render.fail()
   } 
 }
+
 
 async function add(ctx) {
   var user = await ctx.state.session.get('user')

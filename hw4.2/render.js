@@ -7,8 +7,7 @@ export function layout(title, content) {
       #posts {
         margin: 50;
         padding: 50;
-      }
-  
+      }  
       #posts li {
         margin: 40px 0;
         padding: 0;
@@ -45,29 +44,27 @@ export function layout(title, content) {
         width : 100%;
         padding:15px;
         height: 4%; 
-    }
-    .top a{
+      }
+      .top a{
         text-decoration: none;
         color: #f7f79a;
         font-family:" DFKai-sb";
         padding:10px;
         
-    }
-    .top a:hover{
+      }
+      .top a:hover{
         background:linear-gradient(to right,#fafab2, #927700);;
         color: 	#292100;
-    }
-    .right { 
+      }
+      .right { 
         float: right;  
         padding-right: 3%;      
-    }
-
+     }
     .btn{
         border: none;
         outline: none;
         background-color: inherit;          
-    }
-    
+    }    
     .down{
         display: none;
         position: absolute;
@@ -96,30 +93,20 @@ export function layout(title, content) {
       margin-left: auto;
       width: 90%;
       padding: 10px;
-      background-image: url(picture/052-05-2.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: repeat;
-  }
-
-    .big {
-    padding: 10px 15px;
+      background:linear-gradient(,#fafab2, #927700);
     }
     .back{
         margin:0;
         background-image: url(picture/052-05-2.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: repeat;
     }
-    .all{ 
+  .all{ 
         background:rgba(30,20,02,0.8) ;
         border-collapse: collapse;
         color: #ffffe2;
         margin-left:auto; 
         margin-right:auto;
         
-    }
+  }
     </style>
   </head>
   <body class="back" >
@@ -134,17 +121,7 @@ export function layout(title, content) {
               <div class=down>            
                   <a href="/login">登入</a>
                   <a href="/logout">登出</a>
-                  <a href="/signup">註冊</a>
-                  
-              </div>
-          </div>
-
-          <div class=drop>
-              <button class="btn"><a >圖片素材來源</a></button>
-              <div class=down>
-                  <a href="https://kaboompics.com/page/license-and-faq">Kaboompics</a>
-                  <a href="https://burst.shopify.com/?ref=techmoon">Burst</a>
-                  <a href="https://unsplash.com/images/stock/public-domain">Unsplash</a>
+                  <a href="/signup">註冊</a>                  
               </div>
           </div>
           <div class=drop>
@@ -155,14 +132,13 @@ export function layout(title, content) {
                   <a href="https://github.com/cabdy1735/wp109b/tree/main/%E6%9C%9F%E6%9C%AB3">程式碼</a>
                   <a href="https://github.com/cabdy1735/wp109b/blob/main/%E6%9C%9F%E6%9C%AB3/readme.ed">報告</a>
               </div>
-          </div>
-          
+          </div>          
           </div>
       </div>
   </div>
-  <div style=height:12%></div>
+  <div style=height:12% ></div>
   <div class="main">
-    <section id="content">
+    <section id="content" >
       ${content}
     </section>
   </div>
